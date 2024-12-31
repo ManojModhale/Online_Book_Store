@@ -156,11 +156,13 @@ online-bookstore/
 ## Configuration (web.xml)
 
 The `WEB-INF/web.xml` file plays a crucial role as the deployment descriptor for the application. It handles the following configurations:
+
 - **Servlets**: Maps specific URLs to corresponding servlet classes, enabling request handling for features like login, registration, and book browsing.
 - **Filters**: Defines components that process incoming requests or outgoing responses to add functionalities like input validation or authentication checks.
 - **Listeners**: Manages application lifecycle events, such as initializing a database connection when the application starts.
 - **Error Pages**: Customizes user-friendly error messages for specific HTTP error codes, enhancing the user experience during unexpected failures.
-- **Welcome Files**: Specifies the default page (like index.jsp) that loads when users access the application.
+- **Welcome Files**: Specifies the default page (like `index.html`) that loads when users access the application.
+
 The `web.xml` file ensures the application follows a structured and centralized approach to configuration, making it easier to maintain and extend over time.
 
 ---
