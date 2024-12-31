@@ -1,0 +1,187 @@
+.navbar {
+            background-color: #007bff;
+        }
+     
+
+.btnalign
+ {
+    position: relative;
+    right: 150px;
+ }
+/*login modal end*/
+
+/*aboutus start*/
+ #about-us 
+ {
+    background-color: #f8f9fa;
+    padding: 50px; 
+ }
+#img1
+		{
+			float: left;
+			height: 150px;
+			width: 170px;
+			border: 2px solid whitesmoke;
+			border-radius: 90px;	
+		}
+		.outerdiv
+		{
+			padding-left: 100px;
+			padding-right: 100px;
+			
+		}
+		.heading
+		{
+			color : orange;
+		}
+		.textstyle
+		{
+			text-indent: 150px;
+			font-size: 20px;
+			color : whitesmoke;
+		}
+		.divider
+		{
+			height: 4px;
+			opacity: 40%;
+		}
+
+/*aboutus ended*/
+
+/*contact us start*/
+ #contact-us 
+ {
+    background-color: #f8f9fa;
+    padding: 50px;
+ }
+
+
+		#box2
+		{
+			background-color: ghostwhite;
+			opacity: 0.9;
+		}
+		#box1
+		{
+			background: rgba(255,255,0,0.85);
+			animation: mymove 10s infinite;
+		}
+		@keyframes mymove
+		{
+			from {background-color: rgba(255,255,0,0.85);}
+			to {background-color: rgba(255,0,0,0.85);}
+		}
+		.rightdiv
+		{
+			padding-top: 30px;
+			padding-bottom: 30px;
+/*			padding-left: 30px;*/
+/*			padding-right: 30px;*/
+		}
+		.formcontact
+		{
+			padding-top: 50px;
+			padding-bottom: 50px;
+/*			padding-left: 80px;*/
+/*			padding-right: 50px;*/
+		}
+		.bottomline
+		{
+			height: 2.5px;
+			background-color: #b66600;
+		}
+		.bottomline2
+		{
+			height: 2.5px;
+			background-color: ghostwhite;
+		}
+		.contactimg
+		{
+			height: 45px;
+			width: 45px;
+		}
+		.para
+		{
+			font-size: 18px;
+			font-weight: bolder;
+		}
+		.bottomline5
+		{
+			height: 2.5px;
+			background-color: #f57eeb;
+		}
+		.bottomline6
+		{
+			height: 2.5px;
+			background-color: ghostwhite;
+		}
+		.textstyle
+		{
+			font-family: sans-serif;
+			text-decoration-style: solid;
+			color: black;
+		}
+		.fontlabel
+		{
+			color: #5c10ee;
+			font-size: 17px;
+			text-decoration: underline;
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+		.div
+		{
+			border: 3px solid lightgray;
+			height: 910px;
+
+		}
+		.div1
+		{
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+
+.fa 
+{
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 70px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #4267B2;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #f40083;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-envelope{
+    background: #55ACEE;
+  color: white;
+}
+.fa-phone{
+    background: red;
+  color: white;
+}
+.fa-map-marker{
+     background: red;
+  color: white;
+}
+/*contact us ended*/

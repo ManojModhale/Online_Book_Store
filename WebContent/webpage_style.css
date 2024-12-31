@@ -1,0 +1,26 @@
+.firstdiv
+{
+	border: 3px solid #fb276d;
+	border-radius: 30px;
+	width: 1450px;
+	height: 630px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.headspan
+{
+	color: #0530d2;
+}
+.cardimg
+{
+	height: 200px;
+	width: 100%;
+}
+.contactimg
+{
+	height: 40px;
+	width: 40px;
+}

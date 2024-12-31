@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Explore Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- external files -->
+   <link rel="stylesheet" type="text/css" href="F:\Frontend Project\home.css"> 
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="F:\software\webpage_style.css">
+	<script type="text/javascript" src="F:\software\webpage_script.js"></script>
+	<link rel="stylesheet" type="text/css" href="F:\BootStrap\Bootstrap\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="F:\BootStrap\Bootstrap\js\bootstrap.bundle.js">
+
+<link rel="stylesheet" type="text/css" href="card_style.css">
+<style type="text/css">
+		body
+		{
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			min-height: 100vh;
+			background: #f5f5f5;
+		}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+	</style>
+
+</head>
+<body>
+<header>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-info">
+  		<div class="container-fluid">
+    		<h3><a class="navbar-brand" style="text-decoration: underline overline;" href="#">Book Explore Page</a></h3>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    	</div>	
+    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      		<ul class="navbar-nav">
+        		<li class="nav-item">
+          			<h5><a class="nav-link" href="#">Explore</a></h5>
+        		</li>
+            <li class="nav-item">
+                <h5><a class="nav-link" href="payment.jsp">Payment</a></h5>
+            </li>
+            <li class="text-info"> _________ </li>
+            <li class="nav-item ">
+                    <a class="nav-link btn btn-sm btn-outline-light"  href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+                </li>
+        	</ul>	
+        </div>
+        <div>
+	</nav>
+
+
+</header>
+ <!-- Logout Modal -->
+     
+    <div class="modal fade" id="logoutModal" data-backdrop="static"  data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="logoutModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="position: relative; left: 190px;" class="modal-title" id="logoutModalLabel"> <u>Logout</u> <i class="fa fa-lock"></i></h3>   
+                </div>
+                <div class="modal-body">
+                <h4><i class="fa fa-question-circle"></i>Are you sure you want to log-off?</h4><br/>
+                 <a href="LogoutServlet" style="position: relative; left: 3px;" class="btn btn-block btn-success btn-md"><big>Logout</big></a><br>
+                    <button type="button" style="position: relative; left: 3px;" class="btn btn-block btn-danger" data-dismiss="modal">Close</button><br><br>
+                </div>
+            </div>
+        </div>
+    </div>	
+	
+<!-- Marathi Books -->
+<div class="container">
+ <div class="row">
+<!--  1st card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\mbook2.jpg" alt="Marathi Book">
+			</div>
+			<div class="details">
+				<h1>Shyamchi Aai</h1>
+				<h2>-Sane Guruji</h2>
+				<div class="tags">
+					<span class="tag">M1</span>
+					<span class="tag">Marathi</span>
+					<span class="tag">AutoBigraphy</span>		
+				</div>
+				<br>
+				<p class="desc">
+					As the title suggests the central character is Shyam's mother and the kind of enormous influence she has on Shyam's life and upbringing.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">300</span> 150</div>
+	
+					<p> <form method="post" action="CartServlet">
+					<button type="submit" name="m1" value="M1">Add to Cart</button>				
+					</form>	</p>		
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+<!-- 2nd card  -->
+
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\mbook3.jpg" alt="Marathi Book">
+			</div>
+			<div class="details">
+				<h1>Mrutyunjay</h1>
+				<h2>-Shivaji Sawant</h2>
+				<div class="tags">
+					<span class="tag">M2</span>
+					<span class="tag">Marathi</span>
+					<span class="tag">Biography</span>		
+				</div>
+				<br>
+				<p class="desc">
+					Mrityunjaya is the autobiography of Karna in which the author provides a deep exploration of Karna’s life,who is often reduced to an antagonist in the Mahabharata. 
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">500</span> 370</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="m2" value="M2">Add to Cart</button>				
+					</form>	</p>					
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+<!-- 3rd card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\mbook1.jpg" alt="Marathi Book">
+			</div>
+			<div class="details">
+				<h1>Shriman Yogi</h1>
+				<h2>-Ranjeet Desai</h2>
+				<div class="tags">
+					<span class="tag">M3</span>
+					<span class="tag">Marathi</span>
+					<span class="tag">Biography</span>		
+				</div>
+				<br>
+				<p class="desc">
+					This is a biographical novel on Shivaji Maharaj. This historical novel has created history in the world of literature and books.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">750</span> 600</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="m3" value="M3">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- 4th card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\mbook5.jpg" alt="Marathi Book">
+			</div>
+			<div class="details">
+				<h1>Kosala</h1>
+				<h2>-Bhalchandra Nemade</h2>
+				<div class="tags">
+					<span class="tag">M4</span>
+					<span class="tag">Marathi</span>
+					<span class="tag">Novel</span>		
+				</div>
+				<br>
+				<p class="desc">
+					The novel uses the autobiographical form to narrate the journey of a young man, Pandurang Sangvikar, and his friends through his college years.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">500</span> 380</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="m4" value="M4">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- 5th card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\mbook4.jpg" alt="Marathi Book">
+			</div>
+			<div class="details">
+				<h1>Yayati</h1>
+				<h2>-V. S. Khandekar</h2>
+				<div class="tags">
+					<span class="tag">M5</span>
+					<span class="tag">Marathi</span>
+					<span class="tag">Mythology</span>		
+				</div>
+				<br>
+				<p class="desc">
+					it retells the story of the mythical Hindu king, Yayati, from the Hindu epic the Mahabharata,who enjoyed all the pleasures of the flesh for a millennium only.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">400</span> 250</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="m5" value="M5">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- 6th card -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\mbook6.jpg" alt="Marathi Book">
+			</div>
+			<div class="details">
+				<h1>Radheya</h1>
+				<h2>-Ranjeet Desai</h2>
+				<div class="tags">
+					<span class="tag">M6</span>
+					<span class="tag">Marathi</span>
+					<span class="tag">Fiction</span>		
+				</div>
+				<br>
+				<p class="desc">
+					In Radheya, author Ranjeet Desai explores the eternal of question of doing what is right versus carrying out one’s duty, told through the eyes of Karna.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">450</span> 240</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="m6" value="M6">Add to Cart</button>				
+					</form>	</p>					
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+</div> 
+</div> 
+
+<!-- Hindi Books -->
+<div class="container">
+ <div class="row">
+<!--  1st card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\hbook2.jpg" alt="Hindi Book">
+			</div>
+			<div class="details">
+				<h1>The Hidden Hindu</h1>
+				<h2>-Akshat Gupta</h2>
+				<div class="tags">
+					<span class="tag">H1</span>
+					<span class="tag">Hindi</span>
+					<span class="tag">Fiction</span>		
+				</div>
+				<br>
+				<p class="desc">
+					21-year-old who remembers incidents from before his birth, is in pursuit of a mysterious middle-aged Aghori who was tracked for more than 200 years.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">300</span> 150</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="h1" value="H1">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+<!-- 2nd card  -->
+
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\hbook1.jpg" alt="Hindi Book">
+			</div>
+			<div class="details">
+				<h1>Agnipankh</h1>
+				<h2>-A.P.J. Abdul Kalam</h2>
+				<div class="tags">
+					<span class="tag">H2</span>
+					<span class="tag">Hindi</span>
+					<span class="tag">AutoBigraphy</span>		
+				</div>
+				<br>
+				<p class="desc">
+					Agnipankh, is the autobiography of the Missile Man of India and President of India, Dr. A. P. J. Abdul Kalam.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">350</span> 180</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="h2" value="H2">Add to Cart</button>				
+					</form>	</p>					
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+<!-- 3rd card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\hbook4.jpg" alt="Hindi Book">
+			</div>
+			<div class="details">
+				<h1>Madhushala</h1>
+				<h2>-Harivansh Rai Bachchan</h2>
+				<div class="tags">
+					<span class="tag">H3</span>
+					<span class="tag">Hindi</span>
+					<span class="tag">Novel</span>		
+				</div>
+				<br>
+				<p class="desc">
+					The poet Harivanshrai Bachchan attempted to explain the complexity of life; using the symbolism of the Madhushala(The Tavern). 
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">350</span> 170</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="h3" value="H3">Add to Cart</button>				
+					</form>	</p>					
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- 4th card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\hbook3.jpg" alt="Hindi Book">
+			</div>
+			<div class="details">
+				<h1>Gaban</h1>
+				<h2>-Munshi Premchand</h2>
+				<div class="tags">
+					<span class="tag">H4</span>
+					<span class="tag">Hindi</span>
+					<span class="tag">Novel</span>		
+				</div>
+				<br>
+				<p class="desc">
+					Through this novel,he tries to show the falling moral values among lower middle class Indian youth in the era of British India, and to what heights a person can get to.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">300</span> 160</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="h4" value="H4">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- 5th card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\hbook5.jpg" alt="Hindi Book">
+			</div>
+			<div class="details">
+				<h1>Nagaon Ka Rahasya</h1>
+				<h2>-Amish Tripathi</h2>
+				<div class="tags">
+					<span class="tag">H5</span>
+					<span class="tag">Hindi</span>
+					<span class="tag">Fiction</span>		
+				</div>
+				<br>
+				<p class="desc">
+					The story takes place in the imaginary land of Meluha and narrates how the inhabitants of that land are saved from their wars by a nomad named Shiva.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">600</span> 400</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="h5" value="H5">Add to Cart</button>				
+					</form>	</p>					
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- 6th card -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\hbook6.jpg" alt="Hindi Book">
+			</div>
+			<div class="details">
+				<h1>Deep Focus</h1>
+				<h2>-Satyajit Ray</h2>
+				<div class="tags">
+					<span class="tag">H6</span>
+					<span class="tag">Hindi</span>
+					<span class="tag">Essays</span>		
+				</div>
+				<br>
+				<p class="desc">
+					 This book brings together some of Satyajit Ray's most cerebral writings on film,With the economy and precision that marked his films.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">450</span> 250</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="h6" value="H6">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+</div> 
+</div>
+
+<!-- English Books -->
+<div class="container">
+ <div class="row">
+<!--  1st card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\ebook6.jpg" alt="English Book">
+			</div>
+			<div class="details">
+				<h1>A Song of Ice and Fire</h1>
+				<h2>-George R R Martin</h2>
+				<div class="tags">
+					<span class="tag">E1</span>
+					<span class="tag">English</span>
+					<span class="tag">Scientific</span>		
+				</div>
+				<br>
+				<p class="desc">
+					it depicts a violent world, largely without magic and dominated by political realism & concerning loyalty, pride, human sexuality, piety, and the morality of violence.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">4000</span> 2700</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="e1" value="E1">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+<!-- 2nd card  -->
+
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\ebook2.jpg" alt="English Book">
+			</div>
+			<div class="details">
+				<h1>Dharmayoddha Kalki</h1>
+				<h2>-Kevin Missal</h2>
+				<div class="tags">
+					<span class="tag">E2</span>
+					<span class="tag">English</span>
+					<span class="tag">Science Fiction</span>		
+				</div>
+				<br>
+				<p class="desc">
+					Kalki learns that he has been born to cleanse the world he lives in, for which he must journey to the North and learn the ways of Lord Vishnu’s Avatar; from an immortal who wields an axe.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">500</span> 250</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="e2" value="E2">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+<!-- 3rd card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\ebook4.jpg" alt="English Book">
+			</div>
+			<div class="details">
+				<h1>Energize Your Mind</h1>
+				<h2>-Gaur Gopal Das</h2>
+				<div class="tags">
+					<span class="tag">E3</span>
+					<span class="tag">English</span>
+					<span class="tag">Biography</span>		
+				</div>
+				<br>
+				<p class="desc">
+					In this book, bestselling author and life coach Gaur Gopal Das decodes how the mind works.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">300</span> 180</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="e3" value="E3">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- 4th card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\ebook3.jpg" alt="English Book">
+			</div>
+			<div class="details">
+				<h1>Rich Dad Poor Dad</h1>
+				<h2>-Robert T. Kiyosaki</h2>
+				<div class="tags">
+					<span class="tag">E4</span>
+					<span class="tag">English</span>
+					<span class="tag">Novel</span>		
+				</div>
+				<br>
+				<p class="desc">
+					It advocates the importance of financial literacy, financial independence and building wealth through investing in assets,starting and owning businesses.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">500</span> 360</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="e4" value="E4">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- 5th card  -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\ebook5.jpg" alt="English Book">
+			</div>
+			<div class="details">
+				<h1>Harry Potter, allset</h1>
+				<h2>-J.K. Rowling</h2>
+				<div class="tags">
+					<span class="tag">E5</span>
+					<span class="tag">English</span>
+					<span class="tag">Fantesy</span>		
+				</div>
+				<br>
+				<p class="desc">
+					The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley,all of whom are students of Hogwarts School.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">4500</span> 3000</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="e5" value="E5">Add to Cart</button>				
+					</form>	</p>				
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+ <!-- 6th card -->
+<div class="col"> 
+				<div class="wrapper">
+		<div class="card">
+			<div class="poster">
+				<img src="img\ebook1.jpg" alt="English Book">
+			</div>
+			<div class="details">
+				<h1>The Power of your Subconscious Mind</h1>
+				<h2>-Joseph Murphy </h2>
+				<div class="tags">
+					<span class="tag">E6</span>
+					<span class="tag">English</span>
+					<span class="tag">Fiction</span>		
+				</div>
+				<br>
+				<p class="desc">
+					The author fuses his spiritual wisdom and scientific research to bring to light how the sub-conscious mind can be a major influence on our daily lives.
+				</p>
+				<br>
+				<div class="cast">
+					<div class="rs"><u>Rs</u> : <span style="color:grey; font-size: 20px; text-decoration: line-through;">450</span> 240</div>
+					<p> <form  method="post" action="CartServlet">
+					<button type="submit" name="e6" value="E6">Add to Cart</button>				
+					</form>	</p>					
+				</div>	
+			</div>
+		</div>
+	</div>
+ </div>
+</div> 
+</div>
+</body>
+</html>
