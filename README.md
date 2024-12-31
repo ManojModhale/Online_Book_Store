@@ -63,13 +63,17 @@ To set up and run the project locally, follow these steps:
    ```
 
 2. Set up the database:
+
    -Create a MySQL database and configure JDBC to connect.
+ 
    -Import the provided SQL script or create tables for books, users, orders, and related entities.
 
 3. Open in IDE
+ 
    -Open the project in an IDE like Eclipse or Visual Studio Code.
 
 4. Configure Server
+
    -Deploy the application on Apache Tomcat or any servlet container.
 
 5. Run the Application
