@@ -45,7 +45,13 @@
 
 ## Installation and Setup
 
-Follow these steps to run the project locally:
+To set up and run the project locally, follow these steps:
+**Prerequisites**
+   -Java Development Kit (JDK) installed
+   -Apache Tomcat server configured
+   -MySQL database set up
+
+**Steps**
 
 1. Clone the repository:
 
@@ -78,7 +84,6 @@ Follow these steps to run the project locally:
 4. Browse books by category, search, or filter by various criteria.
 5. Add books to your cart and proceed to Payment.
 6. Logout
-
 
 ---
 
@@ -145,6 +150,20 @@ online-bookstore/
 
 
 ```
+
+---
+
+## Configuration (web.xml)
+
+The WEB-INF/web.xml file plays a crucial role as the deployment descriptor for the application. It handles the following configurations:
+- **Servlets**: Maps specific URLs to corresponding servlet classes, enabling request handling for features like login, registration, and book browsing.
+- **Filters**: Defines components that process incoming requests or outgoing responses to add functionalities like input validation or authentication checks.
+- **Listeners**: Manages application lifecycle events, such as initializing a database connection when the application starts.
+- **Error Pages**: Customizes user-friendly error messages for specific HTTP error codes, enhancing the user experience during unexpected failures.
+- **Welcome Files**: Specifies the default page (like index.jsp) that loads when users access the application.
+The web.xml file ensures the application follows a structured and centralized approach to configuration, making it easier to maintain and extend over time.
+
+---
 
 ## Future Enhancements
 
