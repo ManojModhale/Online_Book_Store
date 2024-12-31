@@ -37,7 +37,8 @@
 - **Backend**: Java Servlets, JSP
 - **Database**: MySQL, connected via JDBC
 - **Validation**: Filters for secure input validation
-- **Session Management**: For user data and shopping cart persistence
+- **Listener**: Listener for Database Connection Establishment
+- **Session Management**: HttpSession for user data and shopping cart persistence 
 - **Server**: Apache Tomcat 8.5
 - **Software**: Eclipse Dynamic Web Project
 
@@ -147,8 +148,6 @@ online-bookstore/
 │   │   ├── newpassword.js
 │   │   ├── newuser.js
 │   │   ├── thankyou.js
-
-
 ```
 
 ---
